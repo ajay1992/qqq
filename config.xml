@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="id.meisyal.mim" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>MIM</name>
+<widget id="com.ionicframework.db1158190" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>db1</name>
   <description>
-        An inventory manager mobile application built with Ionic framework.
+        An Ionic Framework and Cordova project.
     </description>
-  <author email="andriasonline@gmail.com" href="http://meisyal.web.id/">
-      MIM Project Team
+  <author email="you@example.com" href="http://example.com.com/">
+      Your Name Here
     </author>
   <content src="index.html"/>
   <access origin="*"/>

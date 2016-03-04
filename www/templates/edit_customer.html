@@ -1,0 +1,29 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-dark">
+    <h1 class="title">Edit Customer</h1>
+    <div class="buttons">
+      <button class="button button-icon icon ion-android-close" ng-click="closeCustomerModal(2)"></button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form name="editcustomer" ng-submit="editCustomer(customersData)">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Name</span>
+          <input type="text" ng-model="customersData.name" required />
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Address</span>
+          <input type="text" ng-model="customersData.address" required />
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Phone Number</span>
+          <input type="text" ng-model="customersData.phone" required />
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit" ng-disabled="editcustomer.$invalid">Edit</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>
