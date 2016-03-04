@@ -1,0 +1,13 @@
+node_modules/
+platforms/
+plugins/
+hooks/
+resources/
+scss/
+www/lib/
+.tmp
+.sass-cache
+*.swp
+*.swo
+*.log
+*.DS_Store

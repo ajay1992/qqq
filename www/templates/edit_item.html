@@ -1,0 +1,37 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-dark">
+    <h1 class="title">Edit Item</h1>
+    <div class="buttons">
+      <button class="button button-icon icon ion-android-close" ng-click="closeItemModal()"></button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form name="edititem" ng-submit="editItem(productData)">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Name</span>
+          <input type="text" ng-model="productData.name" required />
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Description</span>
+          <input type="text" ng-model="productData.description" required />
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Amount</span>
+          <input type="number" ng-model="productData.amount" ng-readonly="true" />
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Purchase Price (US$)</span>
+          <input type="text" ng-model="productData.purchase_price" ng-pattern="^((\d{1,3}(,\d{3})+)|(\d{1,3}))(\.(\d{2})?)$" required />
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Selling Price (US$)</span>
+          <input type="text" ng-model="productData.selling_price" ng-pattern="^((\d{1,3}(,\d{3})+)|(\d{1,3}))(\.(\d{2})?)$" required />
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit" ng-disabled="edititem.$invalid">Edit</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>
